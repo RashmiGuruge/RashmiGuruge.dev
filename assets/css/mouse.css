@@ -1,0 +1,41 @@
+.mousecircle {
+  position: fixed;
+  background-color: #ffffff;
+  width: 8px;
+  height: 8px;
+  left: -8px;
+  top: -8px;
+  border-radius: 100%;
+  z-index: 100000000000000000000000000000000;
+  transform: scale(1);
+}
+
+.mousecircle-follow {
+  position: fixed;
+  box-shadow: 0 0 0 1px #ffffff;
+  width: 44px;
+  height: 44px;
+  left: -28px;
+  top: -28px;
+  border-radius: 50%;
+  z-index: 100000000000000000000000000000000;
+  user-select: none;
+  pointer-events: none;
+  transform: scale(1);
+  transition: background-color 0.5s, border-radius 0.5s, box-shadow 0.5s;
+}
+
+.mousecircle-follow.interactable {
+  background-color: rgba(0, 0, 0, 0.336);
+  border-radius: 50%;
+  box-shadow: 0 0 0 0px #fed307;
+  background-color: white;
+}
+
+@media (pointer: coarse), (hover: none), (max-width: 992px) {
+  .mousecircle-follow,
+  .mousecircle,
+  .mousecircle-txt {
+    display: none;
+  }
+}
