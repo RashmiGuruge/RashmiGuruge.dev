@@ -15,6 +15,7 @@
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +36,7 @@
     <div class="mousecircle-follow"></div> -->
 
 
-    <div class="socialmedia-sidemenu">
+    <div class="socialmedia-sidemenu d-none d-md-none d-lg-block">
         <ul>
             <li style="margin-top: 20px;">
                 <a href="">
@@ -188,7 +189,6 @@
 
     <!-- Skills Section  -->
     <section class="mb-150 mt-150 position-relative" id="skills">
-
         <div class="container max-w-screen-xl px-4">
 
             <div class="text-center mb-5">
@@ -201,62 +201,11 @@
                 </div>
             </div>
 
-            <div class="skill-cards row m-0 gap-4">
-
-                <div class="col glass-card card1">
-                    <h3>Frontend Development</h3>
-                    <hr>
-                    <ul>
-                        <li><i class="fab fa-react"></i> React</li>
-                        <li><i class="fab fa-js-square"></i> jQuery</li>
-                        <li><i class="fas fa-layer-group"></i> Tailwind CSS</li>
-                        <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
-                        <li><i class="fas fa-images"></i> Swiper.js</li>
-                        <li><i class="fas fa-bolt"></i> GSAP</li>
-                        <li><i class="fas fa-mobile-alt"></i> Responsive Design</li>
-                    </ul>
-                </div>
-
-                <div class="col glass-card card2">
-                    <h3>Backend & Database</h3>
-                    <hr>
-                    <ul>
-                        <li><i class="fab fa-python"></i> Python</li>
-                        <li><i class="fab fa-java"></i> Java</li>
-                        <li><i class="fab fa-php"></i> PHP / Laravel</li>
-                        <li><i class="fas fa-server"></i> Node.js / Express.js</li>
-                        <li><i class="fas fa-database"></i> MongoDB</li>
-                        <li><i class="fas fa-database"></i> SQL Databases</li>
-                        <li><i class="fas fa-fire"></i> Firebase</li>
-                    </ul>
-                </div>
-
-                <div class="col glass-card card4">
-                    <h3>Version Control & Deployment</h3>
-                    <hr>
-                    <ul>
-                        <li><i class="fab fa-git-alt"></i> Git</li>
-                        <li><i class="fab fa-github"></i> GitHub</li>
-                        <li><i class="fab fa-gitlab"></i> GitLab CI/CD</li>
-                        <li><i class="fas fa-server"></i> cPanel</li>
-                        <li><i class="fab fa-docker"></i> Docker</li>
-                    </ul>
-                </div>
-
-                <div class="col glass-card card3">
-                    <h3>Content Management Systems</h3>
-                    <hr>
-                    <ul>
-                        <li><i class="fab fa-wordpress"></i> WordPress <br>(Themes, Plugins, ACF)</li>
-                        <li><i class="fas fa-cogs"></i> Custom CMS</li>
-                        <li><i class="fab fa-shopify"></i> Shopify</li>
-                    </ul>
-                </div>
-
+            <div class="skill-cards">
+                <div class="row g-4" id="tech-stack-container"></div>
             </div>
 
         </div>
-
     </section>
     <!--/ Skills Section  -->
 
@@ -275,282 +224,22 @@
                 </div>
             </div>
 
-            <div class="pb-50">
-                <ul class="nav nav-tabs">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Active</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-  </li>
-</ul>
+            <div class="project-nav pb-50">
+                <hr>
+                <ul class="nav justify-content-center d-flex justify-content-center mx-auto gap-4">
+                    <a class="nav-item nav-link" href="#">All</a>
+                    <a class="nav-item nav-link" href="#">Web</a>
+                    <a class="nav-item nav-link" href="#">Mobile</a>
+                    <a class="nav-item nav-link" href="#">Applications</a>
+                </ul>
+                <hr>
             </div>
 
-            <div class="row m-0 gap-4 mb-5">
-
-                <div class="col project-card">
-                    <img src="assets/images/project-dummy-img.jpeg" alt="">
-                    <div class="description-box">
-                        <h3>E-Commerce Platform</h3>
-                        <p>
-                            Pulse Lanka is an opinion mining system which extracts the sentiments of the reviews which
-                            are in Sri Lankan e-commerce platforms. This system extracts the sentiments of code-mixed
-                            and code- switched Sinhalese texts which are posted as reviews.
-                        </p>
-                        <div class="row m-0 gap-2">
-                            <div class="col-auto stack-box">React</div>
-                            <div class="col-auto stack-box">Node</div>
-                            <div class="col-auto stack-box">Tailwind CSS</div>
-                            <div class="col-auto stack-box">MongoDB</div>
-                            <div class="col-auto stack-box">Python</div>
-                        </div>
-                        <hr>
-                        <div>
-                            <div class="row">
-                                <div class="col">
-                                    <a href="" class="view-btn">Code</a>
-                                </div>
-                                <div class="col">
-                                    <a href="" class="live-btn">Live</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col project-card">
-                    <img src="assets/images/project-dummy-img.jpeg" alt="">
-                    <div class="description-box">
-                        <h3>E-Commerce Platform</h3>
-                        <p>
-                            Pulse Lanka is an opinion mining system which extracts the sentiments of the reviews which
-                            are in Sri Lankan e-commerce platforms. This system extracts the sentiments of code-mixed
-                            and code- switched Sinhalese texts which are posted as reviews.
-                        </p>
-                        <div class="row m-0 gap-2">
-                            <div class="col-auto stack-box">React</div>
-                            <div class="col-auto stack-box">Node</div>
-                            <div class="col-auto stack-box">Tailwind CSS</div>
-                            <div class="col-auto stack-box">MongoDB</div>
-                            <div class="col-auto stack-box">Python</div>
-                        </div>
-                        <hr>
-                        <div>
-                            <div class="row">
-                                <div class="col">
-                                    <a href="" class="view-btn">Code</a>
-                                </div>
-                                <div class="col">
-                                    <a href="" class="live-btn">Live</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col project-card">
-                    <img src="assets/images/project-dummy-img.jpeg" alt="">
-                    <div class="description-box">
-                        <h3>E-Commerce Platform</h3>
-                        <p>
-                            Pulse Lanka is an opinion mining system which extracts the sentiments of the reviews which
-                            are in Sri Lankan e-commerce platforms. This system extracts the sentiments of code-mixed
-                            and code- switched Sinhalese texts which are posted as reviews.
-                        </p>
-                        <div class="row m-0 gap-2">
-                            <div class="col-auto stack-box">React</div>
-                            <div class="col-auto stack-box">Node</div>
-                            <div class="col-auto stack-box">Tailwind CSS</div>
-                            <div class="col-auto stack-box">MongoDB</div>
-                            <div class="col-auto stack-box">Python</div>
-                        </div>
-                        <hr>
-                        <div>
-                            <div class="row">
-                                <div class="col">
-                                    <a href="" class="view-btn">Code</a>
-                                </div>
-                                <div class="col">
-                                    <a href="" class="live-btn">Live</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="row m-0 gap-4 pb-50">
-
-                <div class="col project-card">
-                    <img src="assets/images/project-dummy-img.jpeg" alt="">
-                    <div class="description-box">
-                        <h3>E-Commerce Platform</h3>
-                        <p>
-                            Pulse Lanka is an opinion mining system which extracts the sentiments of the reviews which
-                            are in Sri Lankan e-commerce platforms. This system extracts the sentiments of code-mixed
-                            and code- switched Sinhalese texts which are posted as reviews.
-                        </p>
-                        <div class="row m-0 gap-2">
-                            <div class="col-auto stack-box">React</div>
-                            <div class="col-auto stack-box">Node</div>
-                            <div class="col-auto stack-box">Tailwind CSS</div>
-                            <div class="col-auto stack-box">MongoDB</div>
-                            <div class="col-auto stack-box">Python</div>
-                        </div>
-                        <hr>
-                        <div>
-                            <div class="row">
-                                <div class="col">
-                                    <a href="" class="view-btn">Code</a>
-                                </div>
-                                <div class="col">
-                                    <a href="" class="live-btn">Live</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col project-card">
-                    <img src="assets/images/project-dummy-img.jpeg" alt="">
-                    <div class="description-box">
-                        <h3>E-Commerce Platform</h3>
-                        <p>
-                            Pulse Lanka is an opinion mining system which extracts the sentiments of the reviews which
-                            are in Sri Lankan e-commerce platforms. This system extracts the sentiments of code-mixed
-                            and code- switched Sinhalese texts which are posted as reviews.
-                        </p>
-                        <div class="row m-0 gap-2">
-                            <div class="col-auto stack-box">React</div>
-                            <div class="col-auto stack-box">Node</div>
-                            <div class="col-auto stack-box">Tailwind CSS</div>
-                            <div class="col-auto stack-box">MongoDB</div>
-                            <div class="col-auto stack-box">Python</div>
-                        </div>
-                        <hr>
-                        <div>
-                            <div class="row">
-                                <div class="col">
-                                    <a href="" class="view-btn">Code</a>
-                                </div>
-                                <div class="col">
-                                    <a href="" class="live-btn">Live</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col project-card">
-                    <img src="assets/images/project-dummy-img.jpeg" alt="">
-                    <div class="description-box">
-                        <h3>E-Commerce Platform</h3>
-                        <p>
-                            Pulse Lanka is an opinion mining system which extracts the sentiments of the reviews which
-                            are in Sri Lankan e-commerce platforms. This system extracts the sentiments of code-mixed
-                            and code- switched Sinhalese texts which are posted as reviews.
-                        </p>
-                        <div class="row m-0 gap-2">
-                            <div class="col-auto stack-box">React</div>
-                            <div class="col-auto stack-box">Node</div>
-                            <div class="col-auto stack-box">Tailwind CSS</div>
-                            <div class="col-auto stack-box">MongoDB</div>
-                            <div class="col-auto stack-box">Python</div>
-                        </div>
-                        <hr>
-                        <div>
-                            <div class="row">
-                                <div class="col">
-                                    <a href="" class="view-btn">Code</a>
-                                </div>
-                                <div class="col">
-                                    <a href="" class="live-btn">Live</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="text-center">
-                <div class="btn explore-work-btn">
-                    <a href="" class="pe-2 me-1">View Full Portfolio </a>
-                    <span><img class="mb-1_7" src="assets/icon/up right.svg" alt=""></span>
-                </div>
-            </div>
+            <div id="feature-project-cards"></div>
 
         </div>
     </section>
 
-    <section class="">
-  <div class="container max-w-screen-xl px-4">
-
-    <div class="row gvznfB">
-        <div class="col project-content">
-            <div></div>
-        </div>
-        <div class="col project-image">
-            <div>
-                <img src="assets/images/Honor V30 Wallpaper (YTECHB Exclusive).jpeg" alt="">
-            </div>
-        </div>
-    </div>
-   
-  </div>
-</section>
-
-
-<style>
-    .gvznfB:nth-of-type(2n+1) .project-content {
-    grid-column: 7 / -1;
-    text-align: right;
-}
-
-.gvznfB .project-content {
-    position: relative;
-    grid-area: 1 / 1 / -1 / 7;
-}
-
-.gvznfB:nth-of-type(2n+1) .project-image {
-    grid-column: 1 / 8;
-}
-
-.gvznfB .project-image {
-    box-shadow: 0 10px 30px -15px var(--navy-shadow);
-    transition: var(--transition);
-    grid-area: 1 / 6 / -1 / -1;
-    position: relative;
-    z-index: 1;
-}
-
-.gvznfB img {
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    margin: 0;
-    max-width: none;
-    padding: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    object-fit: cover;
-}
-</style>
 
 
 
@@ -655,6 +344,7 @@
 
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/skills.js"></script>
     <script src="assets/js/animation.js"></script>
     <script src="assets/js/jquery.ripples-min.js"></script>
     <script src="assets/js/mouse.js"></script>
