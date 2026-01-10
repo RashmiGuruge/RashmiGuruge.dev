@@ -17,6 +17,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,23 +76,17 @@
 
     <!-- Header -->
     <header>
-        <div class="header-row row m-0 w-100 justify-content-between align-items-center">
 
-            <div class="col-md-3">
-                <a href="">
-                    <img class="header-logo" src="assets/images/logo.png" alt="">
-                </a>
+        <div class="header-row row m-0 w-100 justify-content-between align-items-center d-none d-md-block d-md-inline-flex">
+
+            <div class="col col-md-3">
+                <a href="#"><img class="header-logo" src="assets/images/logo.png" alt=""></a>
             </div>
 
-            <div class="col-md-6">
+            <div class="col col-md-6">
                 <nav class="navbar navbar-expand-lg glass-navbar">
                     <div class="container-fluid">
-                        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="collapse navbar-collapse">
                             <ul class="navbar-nav d-flex justify-content-between w-100">
                                 <li class="nav-item flex-fill text-center">
                                     <a class="nav-link" href="#home">Home</a>
@@ -101,7 +98,7 @@
                                     <a class="nav-link" href="#projects">Projects</a>
                                 </li>
                                 <li class="nav-item flex-fill text-center">
-                                    <a class="nav-link" href="#aboyt">About</a>
+                                    <a class="nav-link" href="#about">About</a>
                                 </li>
                                 <li class="nav-item flex-fill text-center">
                                     <a class="nav-link" href="#experience">Experience</a>
@@ -123,6 +120,43 @@
             </div>
 
         </div>
+
+        <div class="header-row-mobile d-md-none d-lg-none">
+
+            <div class="glass-navbar-mobile d-flex justify-content-between align-items-center px-4">
+                <a href=""><img class="header-logo" src="assets/images/logo.png" alt=""></a>          
+                <button class="navbar-toggler modern-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-bar"></span>
+                    <span class="toggler-bar"></span>
+                    <span class="toggler-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse mobile-nav" id="navbarNav">
+                <ul class="navbar-nav d-flex flex-column text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Get In Touch</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
     </header>
     <!--/ Header -->
 
@@ -155,7 +189,7 @@
                     experience in industry. Eager to build innovative software in a dynamic team setting.
                 </div>
 
-                <div class="row justify-content-center m-0 gap-2 pb-5">
+                <div class="row justify-content-center m-0 gap-4 gap-md-2 pb-5">
                     <div class="col-auto">
                         <div class="btn explore-work-btn">
                             <a href="" class="pe-2 me-1">Explore My Work</a>
@@ -329,7 +363,7 @@
     <!-- footer -->
     <footer class="pb-5">
         <hr class="footer-color">
-        <div class="section-header-para pt-4" style="letter-spacing: 1.3px;">© 2026 Rashmi Guruge. All rights reserved.</div>
+        <div class="section-header-para pt-4 container" style="letter-spacing: 1.3px;">© 2026 Rashmi Guruge. All rights reserved.</div>
     </footer>
 
 
@@ -348,6 +382,22 @@
     <script src="assets/js/animation.js"></script>
     <script src="assets/js/jquery.ripples-min.js"></script>
     <script src="assets/js/mouse.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+  window.addEventListener("load", () => {
+    AOS.init({
+      duration: 900,
+      easing: "ease-out-cubic",
+      offset: 120
+    });
+
+    AOS.refresh(); // 👈 VERY IMPORTANT
+  });
+</script>
+
 
 </body>
 

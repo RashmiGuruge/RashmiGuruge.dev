@@ -42,6 +42,7 @@ function renderSkills() {
   techStack.forEach(section => {
     const col = document.createElement("div");
     col.className = "col-md-6 col-lg-4 d-flex";
+    col.setAttribute("data-aos", "zoom-in-up");
 
     const badges = section.items.map(item => `
       <div class="tech-badge">

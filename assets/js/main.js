@@ -93,11 +93,12 @@ function toggleTopButton() {
 
 
 // --------------- Sample Comment ---------------
-fetch("../components/projects.html")
+fetch("components/projects.html")
   .then(res => res.text())
   .then(data => document.getElementById("feature-project-cards").innerHTML = data);
 
 
 
 
-  
+
+
