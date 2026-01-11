@@ -98,6 +98,11 @@ fetch("components/projects.html")
   .then(data => document.getElementById("feature-project-cards").innerHTML = data);
 
 
+fetch("components/about.html")
+  .then(res => res.text())
+  .then(data => document.getElementById("about-content").innerHTML = data);  
+
+
 
 
 

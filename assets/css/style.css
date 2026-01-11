@@ -14,7 +14,8 @@ html {
 }
 
 body {
-  background: #030B0E;
+  /* background: #030B0E; */
+  background: #010611;
   /* background: #0B0F1A; */
   /* background: radial-gradient(circle at top left, rgba(255,77,148,0.05), transparent 40%),
               radial-gradient(circle at bottom right, rgba(111,134,255,0.06), transparent 40%),
@@ -69,8 +70,8 @@ p {
   font-family: var(--poppins-font);
   font-size: 16px;
   line-height: 26px;
-  letter-spacing: 0.3px;
-  color: #ffffff;
+  letter-spacing: 0.5px;
+  color: rgb(171, 182, 198);
 }
 
 
@@ -294,7 +295,7 @@ p {
   transform: translate(-50%, -50%);
   color: #f5f5f7;
   opacity: 0;
-  animation: fadeInScale 2s ease forwards;
+  animation: fadeInScale 3s ease forwards;
 }
 
 .slider::before {
@@ -738,8 +739,7 @@ p {
 }
 
 .skill-cards .tech-card:hover {
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 10px 22px rgba(0.4, 0.4, 0.4, 0.4), 0 0 11px #7ee6ff;
+  transform: translateY(-10px) scale(1.02);
   border: none;
 }
 
@@ -771,7 +771,7 @@ p {
   font-size: 16px;
   color: rgb(171, 182, 198);
   letter-spacing: 0.5px;
-  font-weight: 500;
+  font-weight: 400;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
@@ -785,7 +785,7 @@ p {
 
 .skill-cards .tech-badge:hover {
   background: rgba(255, 255, 255, 0.1);
-  transform: scale(1.12);
+  /* transform: scale(1.12); */
 }
 
 .skill-cards .tech-icon {
@@ -794,6 +794,53 @@ p {
   object-fit: contain;
 }
 /* --------------- Skill Cards - END --------------- */
+
+
+
+        .feature-card {
+            padding: 20px;
+    border-radius: 20px;
+    background: rgb(133 133 133 / 14%);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    transition: all 0.4s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: #475569;
+        }
+
+        .icon-box {
+            font-size: 1.5rem;
+            margin-right: 15px;
+        }
+
+        /* Icon Colors */
+        .icon-blue { color: #3b82f6; }
+        .icon-green { color: #22c55e; }
+        .icon-yellow { color: #eab308; }
+        .icon-red { color: #ef4444; }
+
+        .feature-title {
+          font-family: var(--inter-font);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+            margin-bottom: 0;
+            color: white;
+        }
+
+        .feature-text {
+            font-family: var(--poppins-font);
+    font-size: 14px;
+    color: rgb(171, 182, 198);
+    letter-spacing: 0.5px;
+    font-weight: 400;
+            margin-top: 12px;
+            margin-bottom: 0px;
+        }
 
 
 
@@ -910,6 +957,14 @@ footer {
   h1 {
     font-size: 35px;
   }
+
+  .slider {
+    height: 120vh !important;
+  }
+
+  .timeline-icon {
+    left: -2.7% !important;
+}
 }
 
 
@@ -939,6 +994,18 @@ footer {
     text-align: center;
   }
 }
+
+/* iPhone 15 (portrait & landscape) */
+@media only screen
+  and (device-width: 393px)
+  and (device-height: 852px)
+  and (-webkit-device-pixel-ratio: 3) {
+
+    .slider {
+        height: 150vh !important;
+    }
+}
+
 
 @media (min-width: 1024px) {
     .max-w-screen-xl {
