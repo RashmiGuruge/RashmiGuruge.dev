@@ -75,7 +75,7 @@
             style="height: 85px; border-radius: 30px;" data-bs-toggle="modal" data-bs-target="#exampleModal">
 
             <div class="d-flex align-items-center justify-content-center mb-1">
-                <a href="" class="pe-2 me-1" style="font-size: 22px;" data-bs-toggle="modal"
+                <a class="pe-2 me-1" style="font-size: 22px;" data-bs-toggle="modal"
                     data-bs-target="#exampleModal">Education</a>
                 <span>
                     <img class="mb-1_7" src="assets/icon/up right.svg" alt="">
@@ -88,11 +88,11 @@
     </div>
 
     <div class="col" data-aos="zoom-in-up">
-        <div class="btn explore-work-btn w-100 d-flex flex-column justify-content-center"
-            style="height: 85px; border-radius: 30px;">
+        <div type="button" class="btn explore-work-btn w-100 d-flex flex-column justify-content-center"
+            style="height: 85px; border-radius: 30px;" data-bs-toggle="modal" data-bs-target="#workModal">
 
             <div class="d-flex align-items-center justify-content-center mb-1">
-                <a href="" class="pe-2 me-1" style="font-size: 22px;">Work Experience</a>
+                <a class="pe-2 me-1" style="font-size: 22px;">Work Experience</a>
                 <span>
                     <img class="mb-1_7" src="assets/icon/up right.svg" alt="">
                 </span>
@@ -105,11 +105,10 @@
 
 
 <!-- Modal -->
-<div class="modal fade" data-bs-backdrop="static" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header px-5">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">Education</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -123,14 +122,19 @@
                             </div>
                             <div class="timeline-content">
                                 <div class="degree-title">BEng (Hons) Software Engineering</div>
-                                <div class="university-name">Informatics Institute of Technology (Affiliated with University of Westminster, UK)</div>
+                                <div class="university-name">Informatics Institute of Technology (Affiliated with
+                                    University of Westminster, UK)</div>
                                 <div class="location-date">Sep 2020 - Nov 2024</div>
                                 <div class="description">
                                     Grade: Upper Second Class Honours
                                     <br><br>
-                                    Thesis: EyeGuardian - Classification of Glaucoma Stage Diagnosis through CNN - XGBoost Fusion with Explainable AI
+                                    Thesis: EyeGuardian - Classification of Glaucoma Stage Diagnosis through CNN -
+                                    XGBoost Fusion with Explainable AI
                                     <br><br>
-                                    Skills: Software Development · Machine Learning and Data Mining · Research and Development (R&D) · Mobile Application Development · Web Development · Concurrent Programming · Artificial Intelligence (AI) · Algorithms · Java Development · Database Systems · Cybersecurity · Object-Oriented Programming (OOP)
+                                    Skills: Software Development · Machine Learning and Data Mining · Research and
+                                    Development (R&D) · Mobile Application Development · Web Development · Concurrent
+                                    Programming · Artificial Intelligence (AI) · Algorithms · Java Development ·
+                                    Database Systems · Cybersecurity · Object-Oriented Programming (OOP)
                                 </div>
                             </div>
                         </div>
@@ -141,7 +145,8 @@
                             </div>
                             <div class="timeline-content">
                                 <div class="degree-title">Foundation Certificate in Higher Education</div>
-                                <div class="university-name">Informatics Institute of Technology, Colombo,Sri Lanka.</div>
+                                <div class="university-name">Informatics Institute of Technology, Colombo,Sri Lanka.
+                                </div>
                                 <div class="location-date">Sep 2019 - Sep 2020</div>
                                 <div class="description">
                                     Grade: Passed with Merit
@@ -157,6 +162,104 @@
                                 <div class="degree-title">G.C.E Ordinary Level</div>
                                 <div class="university-name">Mahinda Rajapaksha College, Homagama</div>
                                 <div class="location-date">2013 - 2019</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="workModal" tabindex="-1" aria-labelledby="workModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header px-5">
+                <h1 class="modal-title fs-5" id="workModalLabel">Work Experience</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body mt-4 mb-4">
+                <div class="container px-lg-4">
+                    <div class="timeline">
+
+                        <div class="timeline-item mb-4">
+                            <div class="timeline-icon">
+                                <i class="fa-solid fa-laptop-code" style="color: #ffffff;"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="degree-title">Associate Software Engineer</div>
+                                <div class="university-name">WAD International PVT ltd, Colombo, Sri Lanka.</div>
+                                <div class="location-date">July 2023 - Present</div>
+                                <div class="description">
+                                    • Implemented and maintained custom WordPress themes, custom plugins, CMS features,
+                                    and e-commerce solutions,
+                                    including payment gateway integrations (Stripe, WooCommerce)
+                                    <br><br>
+                                    • Built interactive, dynamic UI features and animations using React, GSAP, and Morph
+                                    to enhance user engagement.
+                                    <br><br>
+                                    • Managed end-to-end website lifecycles, including deployment, domain/DNS
+                                    configurations
+                                    <br><br>
+                                    • Improved site load speed, reduced frontend bugs, and ensured robust application
+                                    performance through rigorous testing,
+                                    code optimization, and real-time issue resolution
+                                    <br><br>
+                                    • Applied SEO best practices, accessibility standards, and cross-browser
+                                    optimization to enhance website visibility,
+                                    usability, and compliance
+                                    <br><br>
+                                    • Utilized SQL and database management skills to optimize queries and maintain data
+                                    integrity
+                                    <br><br>
+                                    • Integrated REST APIs, third-party services, and analytics tools to extend website
+                                    functionality and monitor performance
+                                    <br><br>
+                                    • Conducted knowledge-sharing sessions and mentored new team members to strengthen
+                                    team capabilities
+                                    <br><br>
+                                    • Followed Git version control workflows and Agile development practices to maintain
+                                    high-quality, maintainable code
+                                    <br><br>
+                                    • Collaborated closely with clients, ensuring timely delivery and quality results.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item mb-4">
+                            <div class="timeline-icon">
+                                <i class="fa-solid fa-laptop-code" style="color: #ffffff;"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="degree-title">Software Engineer Internship</div>
+                                <div class="university-name">WAD International PVT ltd, Colombo, Sri Lanka.</div>
+                                <div class="location-date">July 2022 - July 2023</div>
+                                <div class="description">
+                                    • Worked on web-based applications using PHP and WordPress and developing custom
+                                    themes
+                                    <br><br>
+                                    • Developed interactive and dynamic UI features using React and modern JavaScript
+                                    (ES6+)
+                                    <br><br>
+                                    • Handled bug fixes, feature enhancements, and support tasks across multiple
+                                    components
+                                    <br><br>
+                                    • SQL to manage, query, and optimize databases for improved application performance
+                                    <br><br>
+                                    • Applied SEO best practices to improve website performance, accessibility, and
+                                    search visibility
+                                    <br><br>
+                                    • Performed functional, regression, and cross-browser testing to ensure application
+                                    stability and quality
+                                    <br><br>
+                                    • Assisted in identifying, reporting, and verifying bug fixes using structured test
+                                    cases
+                                    <br><br>
+                                    • Created and maintained technical documentation, including feature descriptions,
+                                    testing notes, and user guidelines
+                                </div>
                             </div>
                         </div>
 
@@ -236,37 +339,37 @@
 
     .degree-title {
         font-family: var(--inter-font);
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    margin-bottom: 0;
-    color: white;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        margin-bottom: 0;
+        color: white;
         margin-bottom: 5px;
     }
 
     .university-name {
         font-family: var(--poppins-font);
-    font-size: 14px;
-    color: rgb(171, 182, 198);
-    letter-spacing: 0.5px;
-    font-weight: 400;
+        font-size: 14px;
+        color: rgb(171, 182, 198);
+        letter-spacing: 0.5px;
+        font-weight: 400;
         margin-bottom: 6px;
     }
 
     .location-date {
         font-family: var(--poppins-font);
-    font-size: 14px;
-    color: rgb(171, 182, 198);
-    letter-spacing: 0.5px;
-    font-weight: 400;
+        font-size: 14px;
+        color: rgb(171, 182, 198);
+        letter-spacing: 0.5px;
+        font-weight: 400;
         margin-bottom: 15px;
     }
 
     .description {
         font-family: var(--poppins-font);
-    font-size: 15px;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
-    color: rgb(171, 182, 198);
+        font-size: 15px;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+        color: rgb(171, 182, 198);
     }
 </style>
